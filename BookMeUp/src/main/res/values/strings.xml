@@ -10,8 +10,10 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
-    <string name="check_save_login">Save Login details</string>
+    <string name="check_save_login">Save Login</string>
     <string name="text_forgot_password">Forgot Password?</string>
     <string name="version">Version</string>
     <string name="logo_description">Book Me Up Logo</string>
+    <string name="login_fb">Facebook Login</string>
+    <string name="login_google">Google Login</string>
 </resources>
