@@ -16,4 +16,5 @@
     <string name="logo_description">Book Me Up Logo</string>
     <string name="login_fb">Facebook Login</string>
     <string name="login_google">Google Login</string>
+    <string name="bookmeup_logo">BookMeUp Logo</string>
 </resources>
