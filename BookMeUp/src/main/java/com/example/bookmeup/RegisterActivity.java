@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
                             .setPositiveButton(R.string.text_homePage, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class); //Change to landing page
                                     startActivity(intent);
                                 }
                             });

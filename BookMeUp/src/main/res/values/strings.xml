@@ -27,4 +27,16 @@
     <string name="text_homePage">HomePage</string>
     <string name="fill_all_fields">Fill all required fields</string>
     <string name="matchPassword">Passwords Match</string>
+    <string name="address">Address:</string>
+    <string name="city">City:</string>
+    <string name="defaultCountry">Canada</string>
+    <string name="userCountry">userCountry</string>
+    <string name="country">Country:</string>
+    <string name="defaultUserName">John Doe</string>
+    <string name="rating">Rating</string>
+    <string name="selling">Selling:</string>
+    <string name="logout">Logout</string>
+    <string name="user_s_profile_image">User\'s Profile Image</string>
+    <string name="setings_icon">Setings Icon</string>
+    <string name="defaultCity">Toronto</string>
 </resources>
