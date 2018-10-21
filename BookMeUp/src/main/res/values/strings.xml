@@ -13,8 +13,18 @@
     <string name="check_save_login">Save Login</string>
     <string name="text_forgot_password">Forgot Password?</string>
     <string name="version">Version</string>
-    <string name="logo_description">Book Me Up Logo</string>
+    <string name="logo_description">BookMeUp Logo</string>
     <string name="login_fb">Facebook Login</string>
     <string name="login_google">Google Login</string>
-    <string name="bookmeup_logo">BookMeUp Logo</string>
+    <string name="registration">Registration</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="btnRregister">Register</string>
+    <string name="success">Success</string>
+    <string name="reg_success">Registration Successful</string>
+    <string name="checkEmail">Check your email for activation</string>
+    <string name="text_homePage">HomePage</string>
+    <string name="fill_all_fields">Fill all required fields</string>
+    <string name="matchPassword">Passwords Match</string>
 </resources>
