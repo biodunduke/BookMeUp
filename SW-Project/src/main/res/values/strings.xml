@@ -39,4 +39,8 @@
     <string name="user_s_profile_image">User\'s Profile Image</string>
     <string name="setings_icon">Setings Icon</string>
     <string name="defaultCity">Toronto</string>
+    <string name="my_header_title">Menu</string>
+    <string name="nav_import">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="profile">Profile</string>
 </resources>
