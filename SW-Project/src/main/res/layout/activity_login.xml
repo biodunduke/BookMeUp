@@ -46,8 +46,9 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="271dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:autofillHints=""
             android:hint="@string/prompt_password"
             android:imeActionId="6"
             android:imeActionLabel="@string/action_sign_in_short"
@@ -71,7 +72,7 @@
 
         <AutoCompleteTextView
             android:id="@+id/email"
-            android:layout_width="271dp"
+            android:layout_width="284dp"
             android:layout_height="match_parent"
             android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
@@ -93,8 +94,8 @@
 
     <ImageView
         android:id="@+id/bookmeupLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
@@ -102,7 +103,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/bookmeup" />
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <CheckBox
         android:id="@+id/checkBox"

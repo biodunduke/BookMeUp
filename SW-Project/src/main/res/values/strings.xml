@@ -2,7 +2,7 @@
     <string name="app_name">Book Me Up</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email or Username</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password (minimum 8 characters) </string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -12,7 +12,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
     <string name="check_save_login">Save Login</string>
     <string name="text_forgot_password">Forgot Password?</string>
-    <string name="version">Version</string>
+    <string name="version">Version 0.01</string>
     <string name="logo_description">BookMeUp Logo</string>
     <string name="login_fb">Facebook Login</string>
     <string name="login_google">Google Login</string>
@@ -20,7 +20,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="btnRregister">Register</string>
+    <string name="btnRegister">Sign Up</string>
     <string name="success">Success</string>
     <string name="reg_success">Registration Successful</string>
     <string name="checkEmail">Check your email for activation</string>
@@ -30,17 +30,23 @@
     <string name="address">Address:</string>
     <string name="city">City:</string>
     <string name="defaultCountry">Canada</string>
-    <string name="userCountry">userCountry</string>
     <string name="country">Country:</string>
     <string name="defaultUserName">John Doe</string>
     <string name="rating">Rating</string>
     <string name="selling">Selling:</string>
     <string name="logout">Logout</string>
     <string name="user_s_profile_image">User\'s Profile Image</string>
-    <string name="setings_icon">Setings Icon</string>
+    <string name="settings_icon">Settings Icon</string>
     <string name="defaultCity">Toronto</string>
     <string name="my_header_title">Menu</string>
     <string name="nav_import">Import</string>
     <string name="gallery">Gallery</string>
     <string name="profile">Profile</string>
+
+    <!-- Strings related to Sign up Page -->
+    <string name="email_fld">Email</string>
+
+    <!-- Strings related to Profile Page -->
+    <string name="userCountry">Canada</string>
+    <string name="userAddress">4164 Bay Street</string>
 </resources>
