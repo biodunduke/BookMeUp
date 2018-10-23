@@ -3,7 +3,7 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email or Username</string>
     <string name="prompt_password">Password (minimum 8 characters) </string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -49,4 +49,5 @@
     <!-- Strings related to Profile Page -->
     <string name="userCountry">Canada</string>
     <string name="userAddress">4164 Bay Street</string>
+    <string name="register">Register</string>
 </resources>
