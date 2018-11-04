@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +71,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
+
+
 //        //Button btnProfile = findViewById(R.id.btnProfile);
 //        btnProfile.setOnClickListener(new OnClickListener() {
 //            @Override
@@ -78,6 +81,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //                startActivity(intent);
 //            }
 //        });
+
+
 
         Button btnRegister = findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(new OnClickListener() {
@@ -363,5 +368,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
     }
+    public void passreset(View v){
+        Intent intent = new Intent(LoginActivity.this, PassResetActivity.class);
+        startActivity(intent);
+    }
+
 }
 
