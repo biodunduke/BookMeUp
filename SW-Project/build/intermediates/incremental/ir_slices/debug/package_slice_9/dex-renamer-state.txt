@@ -1,0 +1,4 @@
+#Sun Nov 04 03:53:27 EST 2018
+base.0=D\:\\Software Project\\BookMeUp\\SW-Project\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex

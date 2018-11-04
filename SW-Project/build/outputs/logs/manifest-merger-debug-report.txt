@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6acc57b24f6fe8e27fe11cab8ef744cc\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\9c43f128a05915c3b3e13748b618ad4f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\668ddfc84ef4679b4aca5d777a5efe77\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\46c6bf2ec147ee274c2838730a7d1d54\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7e1bb1947f41e80bf48fd43a05e484e3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\7a5c1b51bff2d4d2854b657c59486675\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\2fc15cb27747a15e22f7295712ad2469\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5ee2e2d0a4985171a77f552cc5ed9297\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a2b390566717603f5eb2247cc3a2ff23\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\feb9a25705f817faeaac9380255ee913\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f94874d8138f76919ec6891e8ecc0933\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\22091421a0bd346f05c6945713c0deff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\42c4e28edd05f282a5bf17686a53f75a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4921a0fb0063d1e92029e33b6ff39c53\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6e057aeefc93ae2878073d5c43a94278\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\82ebc145ef7953fb8f84285acc82faf5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ceed1299e54193b4cbe49daf919fdd74\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c0231f3b2f6941780c40be307f410bfd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\39c30101630796b40fc97ec11990ea99\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3c782ad7aa7d23ddadffcfbe716e78c8\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\52594baaa5d8d6e46781f7e2a0991167\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\199932b76c2fa06ea0f606b1fc4c704b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1c6b8d46410a51c65ca874cf03f7a293\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\326fc30f3dd3586dca987dabebee3d7d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\f7c7461a6d3604d122cfa8ec90fd08e3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\16c8b14007995eea67629f227ec5f2cb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b2d0d4f6d689b264ee8d390ae1717e16\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\983cf9e166f56da8662de6655112ad89\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\f49eb1bcda24a93499f7f574d0a7082d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\3fb45863e445d96c201a9144c82d9dc5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5146996d686f6f6554fee3afb93d17f7\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+	package
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:2:11-69
+supports-screens
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:5:5-8:39
+	android:largeScreens
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:6:9-36
+	android:smallScreens
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:8:9-36
+	android:resizeable
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:7:9-34
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:11:5-71
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:11:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:12:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:13:5-72
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:13:22-69
+application
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:15:5-43:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6acc57b24f6fe8e27fe11cab8ef744cc\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6acc57b24f6fe8e27fe11cab8ef744cc\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\668ddfc84ef4679b4aca5d777a5efe77\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\668ddfc84ef4679b4aca5d777a5efe77\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\39c30101630796b40fc97ec11990ea99\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\39c30101630796b40fc97ec11990ea99\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3c782ad7aa7d23ddadffcfbe716e78c8\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3c782ad7aa7d23ddadffcfbe716e78c8\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\39c30101630796b40fc97ec11990ea99\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:20:9-35
+	android:label
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:18:9-41
+	android:roundIcon
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:19:9-54
+	android:icon
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:17:9-43
+	android:allowBackup
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:16:9-35
+	android:theme
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:21:9-65
+activity#com.example.bookmeup.LoginActivity
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:22:9-25:61
+	android:screenOrientation
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:25:13-49
+	android:label
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:24:13-45
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:23:13-42
+activity#com.example.bookmeup.SplashActivity
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:26:9-35:20
+	android:screenOrientation
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:28:13-49
+	android:theme
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:29:13-47
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:27:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:33:27-74
+activity#com.example.bookmeup.RegisterActivity
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:36:9-38:61
+	android:screenOrientation
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:37:13-45
+activity#com.example.bookmeup.ProfileActivity
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:39:9-41:61
+	android:screenOrientation
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:41:13-49
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:40:13-44
+activity#com.example.bookmeup.PassResetActivity
+ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:42:9-64
+	android:name
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml:42:19-52
+uses-sdk
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6acc57b24f6fe8e27fe11cab8ef744cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\6acc57b24f6fe8e27fe11cab8ef744cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\9c43f128a05915c3b3e13748b618ad4f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\9c43f128a05915c3b3e13748b618ad4f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\668ddfc84ef4679b4aca5d777a5efe77\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\668ddfc84ef4679b4aca5d777a5efe77\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\46c6bf2ec147ee274c2838730a7d1d54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\46c6bf2ec147ee274c2838730a7d1d54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7e1bb1947f41e80bf48fd43a05e484e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7e1bb1947f41e80bf48fd43a05e484e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\7a5c1b51bff2d4d2854b657c59486675\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\7a5c1b51bff2d4d2854b657c59486675\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\2fc15cb27747a15e22f7295712ad2469\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\2fc15cb27747a15e22f7295712ad2469\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5ee2e2d0a4985171a77f552cc5ed9297\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5ee2e2d0a4985171a77f552cc5ed9297\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a2b390566717603f5eb2247cc3a2ff23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\a2b390566717603f5eb2247cc3a2ff23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\feb9a25705f817faeaac9380255ee913\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\feb9a25705f817faeaac9380255ee913\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f94874d8138f76919ec6891e8ecc0933\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f94874d8138f76919ec6891e8ecc0933\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\22091421a0bd346f05c6945713c0deff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\22091421a0bd346f05c6945713c0deff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\42c4e28edd05f282a5bf17686a53f75a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\42c4e28edd05f282a5bf17686a53f75a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4921a0fb0063d1e92029e33b6ff39c53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4921a0fb0063d1e92029e33b6ff39c53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6e057aeefc93ae2878073d5c43a94278\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6e057aeefc93ae2878073d5c43a94278\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\82ebc145ef7953fb8f84285acc82faf5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\82ebc145ef7953fb8f84285acc82faf5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ceed1299e54193b4cbe49daf919fdd74\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ceed1299e54193b4cbe49daf919fdd74\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c0231f3b2f6941780c40be307f410bfd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c0231f3b2f6941780c40be307f410bfd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\39c30101630796b40fc97ec11990ea99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\39c30101630796b40fc97ec11990ea99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3c782ad7aa7d23ddadffcfbe716e78c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3c782ad7aa7d23ddadffcfbe716e78c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\52594baaa5d8d6e46781f7e2a0991167\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\52594baaa5d8d6e46781f7e2a0991167\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\199932b76c2fa06ea0f606b1fc4c704b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\199932b76c2fa06ea0f606b1fc4c704b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1c6b8d46410a51c65ca874cf03f7a293\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1c6b8d46410a51c65ca874cf03f7a293\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\326fc30f3dd3586dca987dabebee3d7d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\326fc30f3dd3586dca987dabebee3d7d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\f7c7461a6d3604d122cfa8ec90fd08e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\f7c7461a6d3604d122cfa8ec90fd08e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\16c8b14007995eea67629f227ec5f2cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\16c8b14007995eea67629f227ec5f2cb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b2d0d4f6d689b264ee8d390ae1717e16\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b2d0d4f6d689b264ee8d390ae1717e16\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\983cf9e166f56da8662de6655112ad89\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\983cf9e166f56da8662de6655112ad89\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\f49eb1bcda24a93499f7f574d0a7082d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\f49eb1bcda24a93499f7f574d0a7082d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\3fb45863e445d96c201a9144c82d9dc5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\3fb45863e445d96c201a9144c82d9dc5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5146996d686f6f6554fee3afb93d17f7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\AnGeLoS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5146996d686f6f6554fee3afb93d17f7\AndroidManifest.xml:20:5-44
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		ADDED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
+		INJECTED from D:\Software Project\BookMeUp\SW-Project\src\main\AndroidManifest.xml
