@@ -15,7 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -86,11 +90,13 @@
         style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="60dp"
         android:text="@string/action_sign_in"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <ImageView
         android:id="@+id/bookmeupLogo"
@@ -117,12 +123,15 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/text_forgot_password"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -139,50 +148,48 @@
         app:layout_constraintTop_toBottomOf="@+id/signOrRegisterBtn"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/facebook_login"
-        style="?android:textAppearanceSmall"
+    <ImageButton
+        android:id="@+id/facebook_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/login_fb"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        android:background="#00000000"
+        android:contentDescription="TODO"
+        android:foreground="?android:selectableItemBackgroundBorderless"
+        android:src="@mipmap/ic_sign_fb"
+        app:layout_constraintEnd_toStartOf="@+id/google_login_btn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/signOrRegisterBtn" />
 
-    <Button
-        android:id="@+id/button"
-        style="?android:textAppearanceSmall"
+    <ImageButton
+        android:id="@+id/google_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/login_google"
+        android:background="#00000000"
+        android:contentDescription="TODO"
+        android:foreground="?android:selectableItemBackgroundBorderless"
+        android:src="@mipmap/ic_sign_google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/facebook_login"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btnProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/profile"
-        app:layout_constraintStart_toStartOf="@+id/facebook_login"
-        app:layout_constraintTop_toBottomOf="@+id/facebook_login" />
+        app:layout_constraintStart_toEndOf="@+id/facebook_login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/signOrRegisterBtn" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/register"
-        app:layout_constraintStart_toEndOf="@+id/btnProfile"
-        app:layout_constraintTop_toBottomOf="@+id/facebook_login" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook_login_btn"
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>
