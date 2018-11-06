@@ -49,5 +49,17 @@
     <!-- Strings related to Profile Page -->
     <string name="userCountry">Canada</string>
     <string name="userAddress">4164 Bay Street</string>
-    <string name="register">Register</string>
+    <string name="register">Sign up</string>
+
+
+    <!-- Strings related to Pass Reset Page -->
+    <string name="reset">Reset Password</string>
+    <string name="reset_pageheader">Password Reset</string>
+    <string name="reset_boxhint">Account email</string>
+    <string name="reset_goback">Go back to login page</string>
+    <string name="reset_clickmsg">Please check your email for the reset instructions</string>
+    <string name="reset_errmsg">Field cannot be empty</string>
+    ma
+
+
 </resources>
