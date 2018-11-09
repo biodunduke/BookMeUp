@@ -8,12 +8,10 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.Toast;
 
 import java.io.IOError;
@@ -22,26 +20,25 @@ import java.util.ArrayList;
 //import android.support.v7.app.AlertDialog;
 
 public class RegisterActivity extends AppCompatActivity {
-    private static final int MIN_PASSWORD_LENGHT = 8;
+    private static final int MIN_PASSWORD_LENGTH = 8;
     final Context context = this;
+    String error = "";
+    final DBAdapter db = new DBAdapter(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
-        final DBAdapter db = new DBAdapter(this);
-        final String destPath = "/data/data/"+getPackageName()+"/databases/appDB";
         ArrayList<String> users = new ArrayList<String>();
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_spinner_item,users);
-       // GridView gridView= (GridView)findViewById(R.id.dbGrid);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, users);
 
         Button register = findViewById(R.id.regButton);
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String error = "";
+
 
                 EditText firstName = findViewById(R.id.regFirstname);
                 EditText lastName = findViewById(R.id.regLastname);
@@ -50,83 +47,53 @@ public class RegisterActivity extends AppCompatActivity {
                 EditText password2 = findViewById(R.id.regPassword2);
                 EditText email = findViewById(R.id.regEmail);
 
-                final String fName, lName, uName, inputPassword1,inputPassword2, inputEmail;
+                final String fName, lName, uName, inputPassword1, inputPassword2, inputEmail;
 
                 fName = firstName.getText().toString().trim();
-                lName= lastName.getText().toString().trim();
+                lName = lastName.getText().toString().trim();
                 inputEmail = email.getText().toString().trim();
-                uName= userName.getText().toString().trim();
-                inputPassword1= password.getText().toString().trim();
-                inputPassword2= password2.getText().toString().trim();
+                uName = userName.getText().toString().trim();
+                inputPassword1 = password.getText().toString().trim();
+                inputPassword2 = password2.getText().toString().trim();
 
-                if(fName.isEmpty()) {
+
+                if (fName.isEmpty()) {
                     firstName.setError(getResources().getString(R.string.reset_errmsg));
                     firstName.requestFocus();
                     error = "Error";
-                }
-                else if(lName.isEmpty()){
+                } else if (lName.isEmpty()) {
                     lastName.setError(getResources().getString(R.string.reset_errmsg));
                     lastName.requestFocus();
                     error = "Error";
-                }
-                else if(inputEmail.isEmpty()){
+                } else if (inputEmail.isEmpty()) {
                     email.setError(getResources().getString(R.string.reset_errmsg));
                     email.requestFocus();
                     error = "Error";
-                }
-                else if(inputPassword1.isEmpty()){
+                } else if (inputPassword1.isEmpty()) {
                     password.setError(getResources().getString(R.string.reset_errmsg));
                     password.requestFocus();
                     error = "Error";
-                }
-                else if (inputPassword1.length() < MIN_PASSWORD_LENGHT) { //Ensure that the password lenght is over 8
-                    password.setError(getResources().getString(R.string.error_invalid_password));
-                    password.requestFocus();
-                    error = "Error";
-                }
-               else if(!inputPassword1.equals(inputPassword2)) {
+                } else if (inputPassword1.length() < MIN_PASSWORD_LENGTH) { //Ensure that the password length is over 8
+
+                } else if (!(inputPassword1.equals(inputPassword2))) {
                     password2.setError(getResources().getString(R.string.matchPassword));
                     password2.requestFocus();
                     error = "Error";
-                }
-
-               else if(uName.isEmpty()){
+                } else if (uName.isEmpty()) {
                     userName.setError(getResources().getString(R.string.reset_errmsg));
+                    userName.requestFocus();
+                    error = "Error";
+                } else if (checkUserName(uName)) {
+                    userName.requestFocus();
+                    userName.setError(getResources().getString(R.string.usernameUnavailable));
                     error = "Error";
                 }
-                else if (error.equals("")){
-                    try {
-                        String dbUname;
-
-                        db.open(destPath);
-                        Cursor dbCursor = db.getAllContacts(); //db.getContact(uName);
-                        dbCursor.moveToFirst();
-                        while (dbCursor != null) {
-                            dbUname = dbCursor.getString(dbCursor.getColumnIndex("username"));
-                            if (dbUname.equals(uName)) { //Username is taken
-                                userName.requestFocus();
-                                userName.setError(getString(R.string.usernameUnavailable));
-                                break;
-                            } else{
-                                db.insertUser(fName,lName,uName,inputEmail,inputPassword1);
-                            break;
-                            }
-                        }
-                    }catch (IOError er){
-                        er.printStackTrace();
-                    } catch (SQLException sql){
-                        sql.printStackTrace();
-                    }
-                }
-
 
 
                 // Do proper check before here.
-                if (!userName.getText().toString().isEmpty()
-                        && !password.getText().toString().isEmpty()
-                        && !password2.getText().toString().isEmpty()
-                        && !(inputPassword1.length() < 8)
-                        && TextUtils.equals(inputPassword1, inputPassword2)) {
+                if (!error.equals("Error")) {
+                    db.insertUser(fName, lName, uName, inputEmail, inputPassword1);
+                    db.close();
                     AlertDialog.Builder regAlertDialog = new AlertDialog.Builder(RegisterActivity.this);
                     regAlertDialog
                             .setTitle(R.string.success)
@@ -139,12 +106,49 @@ public class RegisterActivity extends AppCompatActivity {
                                     startActivity(intent);
                                 }
                             });
+
                     regAlertDialog.show();
                 } else {
                     Toast.makeText(getApplicationContext(), R.string.fill_all_fields, Toast.LENGTH_LONG).show();
+                    error = "";
                 }
             }
         });
 
+    }
+
+    public boolean checkUserName(String uName) {
+        try {
+            String dbUname;
+            final String destPath = "/data/data/" + getPackageName() + "/databases/appDB";
+            db.open(destPath);
+            Cursor dbCursor = db.getAllContacts(); //db.getContact(uName);
+            dbCursor.moveToFirst();
+            //  while (dbCursor != null) {
+            //   if(dbCursor!=null)
+            while (!dbCursor.isLast()) {
+                //    do {
+                dbUname = dbCursor.getString(dbCursor.getColumnIndex("username"));
+                if (dbUname.equals(uName)) //{ //Username is taken
+                {
+                    error = "Error";
+
+                    return true;
+                    // break;
+                } else {
+                    dbCursor.moveToNext();
+                    //  db.insertUser(fName,lName,uName,inputEmail,inputPassword1);
+                    //   break;
+                }
+                // }while(dbCursor.moveToNext());
+
+            }
+        } catch (IOError er) {
+            er.printStackTrace();
+        } catch (SQLException sql) {
+            sql.printStackTrace();
+        }
+
+        return false;
     }
 }
