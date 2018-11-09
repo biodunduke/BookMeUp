@@ -14,10 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.io.IOError;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-
-//import android.support.v7.app.AlertDialog;
 
 public class RegisterActivity extends AppCompatActivity {
     private static final int MIN_PASSWORD_LENGTH = 8;
@@ -74,7 +73,9 @@ public class RegisterActivity extends AppCompatActivity {
                     password.requestFocus();
                     error = "Error";
                 } else if (inputPassword1.length() < MIN_PASSWORD_LENGTH) { //Ensure that the password length is over 8
-
+                    password.setError(getResources().getString(R.string.error_invalid_password));
+                    password.requestFocus();
+                    error = "Error";
                 } else if (!(inputPassword1.equals(inputPassword2))) {
                     password2.setError(getResources().getString(R.string.matchPassword));
                     password2.requestFocus();
@@ -89,10 +90,20 @@ public class RegisterActivity extends AppCompatActivity {
                     error = "Error";
                 }
 
-
                 // Do proper check before here.
                 if (!error.equals("Error")) {
-                    db.insertUser(fName, lName, uName, inputEmail, inputPassword1);
+                    String  hashedPassword= null;
+                    try {
+                        hashedPassword = hashPassword(inputPassword1);
+                    } catch (NoSuchAlgorithmException e) {
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        db.insertUser(fName, lName, uName, inputEmail,hashedPassword);
+                    } catch (SQLException sql) {
+                        sql.printStackTrace();
+                    }
                     db.close();
                     AlertDialog.Builder regAlertDialog = new AlertDialog.Builder(RegisterActivity.this);
                     regAlertDialog
@@ -121,7 +132,11 @@ public class RegisterActivity extends AppCompatActivity {
         try {
             String dbUname;
             final String destPath = "/data/data/" + getPackageName() + "/databases/appDB";
-            db.open(destPath);
+            try {
+                db.open(destPath);
+            } catch (SQLException sql) {
+                sql.printStackTrace();
+            }
             Cursor dbCursor = db.getAllContacts(); //db.getContact(uName);
             dbCursor.moveToFirst();
             //  while (dbCursor != null) {
@@ -143,12 +158,32 @@ public class RegisterActivity extends AppCompatActivity {
                 // }while(dbCursor.moveToNext());
 
             }
-        } catch (IOError er) {
-            er.printStackTrace();
         } catch (SQLException sql) {
             sql.printStackTrace();
         }
 
         return false;
     }
+
+    public String hashPassword(String password) throws NoSuchAlgorithmException {
+        StringBuffer MD5Hash=null;
+        try {
+            MessageDigest digest = java.security.MessageDigest.getInstance("MD5");
+            digest.update(password.getBytes());
+            byte messageDigest[] = digest.digest();
+            MD5Hash = new StringBuffer();
+            for (int i =0; i<messageDigest.length;i++){
+                String hash = Integer.toHexString(0xFF & messageDigest[i]);
+                while (hash.length()<2)
+                    hash = "0" + hash;
+                MD5Hash.append(hash);
+            }
+
+            //result.setText(MD5Hash);
+        }catch(NoSuchAlgorithmException algError){
+            algError.printStackTrace();
+        }
+        return MD5Hash.toString();
+    }
+
 }
