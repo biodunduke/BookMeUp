@@ -13,11 +13,12 @@ public class PassResetActivity extends AppCompatActivity {
 
     private Button Preset;
     int clicked = 0;
+    String usremail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pass_reset);
- ;
+
 
         Preset = findViewById(R.id.preset_btn);
         Preset.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +27,7 @@ public class PassResetActivity extends AppCompatActivity {
 
                 TextView tv_msg = findViewById(R.id.feedback_tv);
                 EditText account = findViewById(R.id.account_fld);
+                EditText fld = findViewById(R.id.account_guide);
 
                 Intent back = new Intent(getApplicationContext(), LoginActivity.class);
                 if(isEmpty(account) == true){
@@ -34,15 +36,18 @@ public class PassResetActivity extends AppCompatActivity {
                 }else{
                     clicked++;
 
-                if(clicked == 1){
+                    if(clicked == 1){
 
 
 
                     //Change button functionality to go back after checking on how many times it has been clicked
                     Preset.setText(R.string.reset_goback);
 
-                    //removing the account field from view on click
-                    account.setVisibility(View.GONE);
+                    //capturing the account email
+
+                     usremail = account.getText().toString();
+
+
 
                     //View the reset message
                     tv_msg.setText(R.string.reset_clickmsg);
@@ -52,9 +57,9 @@ public class PassResetActivity extends AppCompatActivity {
                      */
 
                     }
-                else if(clicked > 1){
+                    else if(clicked > 1){
                     startActivity(back);
-                }
+                    }
                 }
             }
         });
