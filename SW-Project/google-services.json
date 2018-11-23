@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1012480881225",
+    "firebase_url": "https://bookmeup-afa42.firebaseio.com",
+    "project_id": "bookmeup-afa42",
+    "storage_bucket": "bookmeup-afa42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012480881225:android:919e3c7b8d44aa89",
+        "android_client_info": {
+          "package_name": "com.example.bookmeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012480881225-e2hboorkuhjtiff6ium1se3vh0faid2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookmeup",
+            "certificate_hash": "9708040d8d3d5d3555e0c066334372ffbd690e33"
+          }
+        },
+        {
+          "client_id": "1012480881225-2h215ea94qh9nbfup21phpnvass7gauo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB112kroz-RNxhYuHzVwL1K65AAhjv6rw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012480881225-2h215ea94qh9nbfup21phpnvass7gauo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

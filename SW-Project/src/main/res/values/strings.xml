@@ -23,6 +23,7 @@
     <string name="btnRegister">Sign Up</string>
     <string name="success">Success</string>
     <string name="reg_success">Registration Successful</string>
+    <string name="reg_failed">Registration Failed</string>
     <string name="checkEmail">Check your email for activation</string>
     <string name="text_homePage">HomePage</string>
     <string name="fill_all_fields">Fill all required fields</string>

@@ -7,12 +7,19 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -22,12 +29,14 @@ public class RegisterActivity extends AppCompatActivity {
     private static final int MIN_PASSWORD_LENGTH = 8;
     final Context context = this;
     String error = "";
+    private FirebaseAuth mAuth;
     final DBAdapter db = new DBAdapter(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        mAuth = FirebaseAuth.getInstance();
 
         ArrayList<String> users = new ArrayList<String>();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, users);
@@ -100,12 +109,52 @@ public class RegisterActivity extends AppCompatActivity {
                     }
 
                     try {
-                        db.insertUser(fName, lName, uName, inputEmail,hashedPassword);
+
+                        mAuth.createUserWithEmailAndPassword(inputEmail,hashedPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(task.isSuccessful()){
+                                    AlertDialog.Builder regAlertDialog = new AlertDialog.Builder(RegisterActivity.this);
+                                    regAlertDialog
+                                            .setTitle(R.string.success)
+                                            .setMessage(String.format("%s\n%s", getString(R.string.reg_success), getString(R.string.checkEmail)))
+                                            .setCancelable(false)
+                                            .setPositiveButton(R.string.text_homePage, new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class); //Change to landing page
+                                                    startActivity(intent);
+                                                }
+                                            });
+
+                                    regAlertDialog.show();
+                                }
+                                else{
+                                    AlertDialog.Builder regAlertDialog = new AlertDialog.Builder(RegisterActivity.this);
+                                    regAlertDialog
+                                            .setTitle(R.string.success)
+                                            .setMessage(String.format("%s\n%s", getString(R.string.reg_failed), getString(R.string.checkEmail)))
+                                            .setCancelable(false)
+                                            .setPositiveButton(R.string.text_homePage, new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    Intent intent = new Intent(getApplicationContext(), RegisterActivity.class); //Change to landing page
+                                                    startActivity(intent);
+                                                }
+                                            });
+
+                                    regAlertDialog.show();
+                                }
+
+                            }
+                        });
+
+                      //  db.insertUser(fName, lName, uName, inputEmail,hashedPassword);
                     } catch (SQLException sql) {
                         sql.printStackTrace();
                     }
                     db.close();
-                    AlertDialog.Builder regAlertDialog = new AlertDialog.Builder(RegisterActivity.this);
+                   /* AlertDialog.Builder regAlertDialog = new AlertDialog.Builder(RegisterActivity.this);
                     regAlertDialog
                             .setTitle(R.string.success)
                             .setMessage(String.format("%s\n%s", getString(R.string.reg_success), getString(R.string.checkEmail)))
@@ -118,7 +167,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 }
                             });
 
-                    regAlertDialog.show();
+                    regAlertDialog.show();*/
                 } else {
                     Toast.makeText(getApplicationContext(), R.string.fill_all_fields, Toast.LENGTH_LONG).show();
                     error = "";
@@ -184,6 +233,14 @@ public class RegisterActivity extends AppCompatActivity {
             algError.printStackTrace();
         }
         return MD5Hash.toString();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+      //  updateUI(currentUser);
     }
 
 }
