@@ -244,15 +244,6 @@ private FirebaseAuth mAuth;
         populateAutoComplete();
         mAuth = FirebaseAuth.getInstance();
 
-//        //Button btnProfile = findViewById(R.id.btnProfile);
-//        btnProfile.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(LoginActivity.this,ProfileActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
 
 
         Button btnRegister = findViewById(R.id.btnRegister);
